@@ -1,2 +1,4 @@
 rootProject.name = 'tamrin3'
 include 'MultiThreading'
+include 'MiniKuber'
+

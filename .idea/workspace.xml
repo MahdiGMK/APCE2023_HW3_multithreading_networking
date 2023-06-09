@@ -4,24 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecd8278c-70a2-4c41-a88d-64e238e3efdd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiThreading/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiThreading/src/main/java/Mapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiThreading/src/main/java/Master.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiThreading/src/main/java/Reducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MultiThreading/src/test/java/MapReduceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="ecd8278c-70a2-4c41-a88d-64e238e3efdd" name="Changes" comment="map reduce">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Client.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/Server.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Client/ClientMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Client/View/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Client/View/Command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Client/View/Command/CommandHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Client/View/Command/Option.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Model/ClientType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Model/Packet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Model/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Server/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Server/Master.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Server/Scheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Server/WorkerConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/main/java/Worker/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MiniKuber/src/test/java/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +41,9 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/MiniKuber">
+          <activation />
+        </task>
         <projects_view />
       </state>
     </system>
@@ -46,6 +51,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -58,9 +64,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="OptimizeOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
   </component>
   <component name="ProjectId" id="2QpfcVDDXC14IYH7vkmhWSn6oAf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -84,10 +87,10 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.Testcase">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="tamrin3.MultiThreading.main" />
+  <component name="RunManager" selected="Gradle.tamrin3:MiniKuber [:MiniKuber:Worker.main()]">
+    <configuration type="JUnit" factoryName="JUnit">
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,18 +141,62 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="tamrin3 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Test.test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="test" />
+            <option value=":MiniKuber:test" />
+            <option value="--tests" />
+            <option value="&quot;Test.test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="tamrin3:MiniKuber [:MiniKuber:ClientMain.main()]" type="GradleRunConfiguration" factoryName="Gradle" singleton="false">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/MiniKuber" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":MiniKuber:ClientMain.main()" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="tamrin3:MiniKuber [:MiniKuber:Worker.main()]" type="GradleRunConfiguration" factoryName="Gradle" singleton="false">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/MiniKuber" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":MiniKuber:Worker.main()" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -182,13 +229,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration type="JUnit" factoryName="JUnit">
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Testcase" type="JUnit" factoryName="JUnit">
       <module name="tamrin3.MultiThreading.test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -202,21 +242,22 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.Worker" />
+      <item itemvalue="Application.Server" />
+      <item itemvalue="Gradle.tamrin3:MiniKuber [:MiniKuber:ClientMain.main()]" />
+      <item itemvalue="Gradle.tamrin3:MiniKuber [:MiniKuber:Worker.main()]" />
+      <item itemvalue="Gradle.Test.test" />
       <item itemvalue="Gradle.MapReduceTest" />
       <item itemvalue="Gradle.MapReduceTest.testMaster" />
-      <item itemvalue="Gradle.tamrin3 [test]" />
       <item itemvalue="Gradle.test.test" />
       <item itemvalue="JUnit.Testcase" />
-      <item itemvalue="JUnit." />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Test.test" />
         <item itemvalue="Gradle.MapReduceTest" />
         <item itemvalue="Gradle.MapReduceTest.testMaster" />
-        <item itemvalue="Gradle.test.test" />
-        <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Gradle.tamrin3 [test]" />
       </list>
     </recent_temporary>
   </component>
@@ -230,8 +271,26 @@
       <updated>1686055524982</updated>
       <workItem from="1686055528585" duration="12443000" />
       <workItem from="1686084339050" duration="202000" />
-      <workItem from="1686084713838" duration="1456000" />
+      <workItem from="1686084713838" duration="2286000" />
+      <workItem from="1686121303826" duration="33260000" />
+      <workItem from="1686204214877" duration="4596000" />
+      <workItem from="1686221611187" duration="21911000" />
     </task>
+    <task id="LOCAL-00001" summary="map reduce">
+      <created>1686086193208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686086193208</updated>
+    </task>
+    <task id="LOCAL-00002" summary="map reduce">
+      <created>1686086270914</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686086270914</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +306,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="map reduce" />
+    <option name="LAST_COMMIT_MESSAGE" value="map reduce" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/MiniKuber/src/main/java/Server/Scheduler.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
