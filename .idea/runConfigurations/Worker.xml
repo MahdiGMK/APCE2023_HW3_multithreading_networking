@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Worker" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="Worker.Worker" />
+    <module name="tamrin3.MiniKuber.main" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
